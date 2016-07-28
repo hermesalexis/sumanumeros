@@ -5,7 +5,7 @@ get '/' do
  erb:home
 end
 
-get '/suma' do
+post '/suma' do
  @suma = params[:suma].to_i + 1
  erb:home
 end
